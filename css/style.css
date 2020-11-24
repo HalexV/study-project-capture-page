@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #48c5ce;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2.2rem;
+}
+
+main {
+  padding: 2rem;
+  background-image: url(../images/people.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer {
+  max-width: 23rem;
+  background-color: #ffffffbb;
+  padding: 2rem;
+  float: right;
+}
+
+.formContainer h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer p {
+  margin-bottom: 1.5rem;
+}
+
+.input-block input,
+.select-block select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url(../images/arrow.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) center;
+}
+
+.formContainer button {
+  color: white;
+  background-color: #48c5ce;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.formContainer button:hover {
+  background-color: #299ba3;
+}
+
+footer {
+  background-color: #202121;
+  padding: 4rem;
+  text-align: center;
+}
+
+.picture {
+  width: 16rem;
+}
+
+.description {
+  color: white;
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 4rem;
+  text-align: left;
+}
+
+.description h3 {
+  font-size: 2.4rem;
+}
+
+.description p {
+  font-size: 1.2rem;
+}
+
+.description h3,
+.description p {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 425px) {
+  .formContainer {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .description {
+    display: block;
+    max-width: none;
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1042px) {
+  .container {
+    width: 100%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 80%;
+  }
+}
